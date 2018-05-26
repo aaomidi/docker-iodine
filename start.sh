@@ -10,4 +10,4 @@ iptables -t nat -A POSTROUTING -s 10.10.10.0/24 -o eth0 -j MASQUERADE
 iptables -S
 iptables -S -t nat
 
-iodined -c -f $TUNNEL_IP $IODINE_HOST -P $IODINE_PASSWORD -n $EXTERNAL_IP
+./bin/iodined -c -f $TUNNEL_IP $IODINE_HOST -P $IODINE_PASSWORD -n $EXTERNAL_IP
